@@ -3,6 +3,28 @@
     margin: 0;
 
     font-family: 'Work Sans', sans-serif;
+    
+}
+
+:root {
+    --pink-color: rgb(254, 4, 183);
+
+}
+
+.btn-primary {
+    padding: 1.4rem 2.5rem;
+    border-radius: 48px;
+    color: #FFF;
+
+    font-size: 1.25rem;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+    background-color: var(--pink-color);
+    border: none;
+
+
 }
 
 /* header portion start */
@@ -44,11 +66,11 @@ nav {
     text-decoration: none;
     color: #3C354F;
     text-align: center;
-    
+
     font-size: 1.125rem;
-    
+
     font-weight: 500;
-   
+
 }
 
 .nav-manu ul li:last-child {
@@ -56,4 +78,180 @@ nav {
     background: rgba(11, 2, 35, 0.10);
     padding: 1.2rem 1.5rem;
 
+}
+
+/* goat section start */
+.goat-section {
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+    
+    /* justify-items: center; */
+    display: flex;
+    justify-content: space-between;
+    
+    gap: 20rem;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    
+
+
+
+
+}
+.goat-title{
+    background-image: url("images/Group14.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8.7rem 12rem;
+    background-color: #FFF;
+    text-align: center;
+    
+}
+
+.goat-title h2 {
+    color: #0B0223;
+    text-align: center;
+
+    font-size: 3rem;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+}
+
+.goat-title h1 {
+    text-align: center;
+
+    font-size: 5.9rem;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+
+}
+
+.goat-title p {
+    color: #534C64;
+    
+    font-size: 1.4rem;
+
+    font-weight: 500;
+
+    text-transform: lowercase;
+    margin-bottom: 2.5rem;
+}
+.goat-image{
+    padding-right: 12rem;
+   
+}
+
+.goat-image img {
+    width: 100%;
+}
+.go-btn{
+    background: #4EC5F7;
+}
+
+/* goat section end */
+
+/* header portion end */
+
+/* main start */
+main {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+
+
+
+
+
+
+
+
+/* responsive portion */
+/* for mobile device */
+@media screen and (max-width:576px) {
+
+    /* header portion */
+    /* nav portion */
+    nav {
+        flex-direction: column;
+        gap: 3.4rem;
+    }
+
+    .nav-manu ul {
+        flex-direction: column;
+    }
+
+    /* nav end */
+    /* goat section start */
+    .goat-section {
+      
+        padding: 2rem;
+        flex-direction: column;
+        
+    }
+    .goat-title{
+        padding: 2rem 2rem;
+        
+    }
+
+    .goat-title h2 {
+        font-size: 2rem;
+    }
+
+    .goat-title h1 {
+        font-size: 5rem;
+    }
+    .goat-image{
+        padding-right: 0px;
+    }
+    
+/* button  */
+    .btn-primary {
+        padding: 1rem 2rem;
+        
+        
+
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (min-width:576px) and (max-width:992px) {
+/* nav start */
+    nav {
+        flex-direction: column;
+        gap: 3rem;
+
+    }
+
+    .nav-manu ul {
+        flex-direction: column;
+    }
+    /* nav end */
+    /* goat secton start */
+    .goat-section {
+      
+        padding: 5rem;
+        flex-direction: column;
+        
+    }
+    .goat-title{
+        padding: 2rem 2rem;
+        
+    }
+    .goat-image {
+        padding-right: 0px;
+    }
+/* goat sectin end */
 }
