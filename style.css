@@ -296,6 +296,7 @@ main {
     .goat-image {
         padding-right: 0px;
     }
+    /* goat portion end */
 
     /* button  */
     .btn-primary {
@@ -304,6 +305,13 @@ main {
 
 
         font-size: 1rem;
+    }
+    /* funny section start */
+    .funny-box-container{
+        flex-direction: column;
+    }
+    .funny-title h3{
+        font-size: 2rem;
     }
 }
 
@@ -340,4 +348,9 @@ main {
     }
 
     /* goat sectin end */
+
+    /* funny section start */
+    .funny-box-container{
+        flex-wrap: wrap;
+    }
 }
