@@ -28,9 +28,10 @@
 }
 
 /* header portion start */
-.sp-gamer{
+.sp-gamer {
     color: #F948B2;
 }
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -191,18 +192,19 @@ main {
     font-weight: 700;
 
 }
-.sp-funny{
+
+.sp-funny {
     color: #8758F1;
 }
 
 .funny-title p {
     color: #534C64;
-   
-    
+
+
     font-size: 1.2rem;
-   
+
     font-weight: 400;
-    
+
 }
 
 .funny-box-container {
@@ -216,7 +218,8 @@ main {
     position: relative;
 
 }
-.box img{
+
+.box img {
     margin-bottom: .7rem;
 }
 
@@ -249,7 +252,56 @@ main {
     filter: brightness(80%);
 
 }
+
 /* funny section end */
+/* play section start */
+
+.play-section {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 15rem;
+    box-sizing: border-box;
+    margin-top: 6rem;
+}
+
+
+
+.play-title h3 {
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 1.5rem;
+}
+
+.play-title p  {
+    color: #534C64;
+    text-align: right;
+    
+    font-size: 1.2rem;
+    
+    font-weight: 400;
+    
+}
+.play-image{
+    position: relative;
+}
+.play-image img:nth-child(2){
+    
+    position: absolute;
+    right: 80%;
+    top: 70%;
+}
+.sp-play{
+    color: var(--pink-color);
+}
+/* play section end */
+
+
+
 
 
 
@@ -296,6 +348,7 @@ main {
     .goat-image {
         padding-right: 0px;
     }
+
     /* goat portion end */
 
     /* button  */
@@ -306,11 +359,13 @@ main {
 
         font-size: 1rem;
     }
+
     /* funny section start */
-    .funny-box-container{
+    .funny-box-container {
         flex-direction: column;
     }
-    .funny-title h3{
+
+    .funny-title h3 {
         font-size: 2rem;
     }
 }
@@ -350,7 +405,7 @@ main {
     /* goat sectin end */
 
     /* funny section start */
-    .funny-box-container{
+    .funny-box-container {
         flex-wrap: wrap;
     }
 }
