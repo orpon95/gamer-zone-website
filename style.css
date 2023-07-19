@@ -3,7 +3,7 @@
     margin: 0;
 
     font-family: 'Work Sans', sans-serif;
-    
+
 }
 
 :root {
@@ -28,6 +28,9 @@
 }
 
 /* header portion start */
+.sp-gamer{
+    color: #F948B2;
+}
 nav {
     display: flex;
     justify-content: space-around;
@@ -84,28 +87,29 @@ nav {
 .goat-section {
     /* display: grid;
     grid-template-columns: repeat(2,1fr); */
-    
+
     /* justify-items: center; */
     display: flex;
     justify-content: space-between;
-    
+
     gap: 20rem;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
-    
+
 
 
 
 
 }
-.goat-title{
+
+.goat-title {
     background-image: url("images/Group14.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: left;
     padding: 8.7rem 12rem;
     background-color: #FFF;
     text-align: center;
-    
+
 }
 
 .goat-title h2 {
@@ -138,7 +142,7 @@ nav {
 
 .goat-title p {
     color: #534C64;
-    
+
     font-size: 1.4rem;
 
     font-weight: 500;
@@ -146,15 +150,17 @@ nav {
     text-transform: lowercase;
     margin-bottom: 2.5rem;
 }
-.goat-image{
+
+.goat-image {
     padding-right: 12rem;
-   
+
 }
 
 .goat-image img {
     width: 100%;
 }
-.go-btn{
+
+.go-btn {
     background: #4EC5F7;
 }
 
@@ -169,8 +175,81 @@ main {
 
 }
 
+/* funny section start */
+.funny-title {
+    text-align: center;
+    margin: 6rem 0 2.7rem 0;
+}
+
+.funny-title h3 {
+    color: #0B0223;
 
 
+    font-size: 3rem;
+    margin-bottom: .7rem;
+
+    font-weight: 700;
+
+}
+.sp-funny{
+    color: #8758F1;
+}
+
+.funny-title p {
+    color: #534C64;
+   
+    
+    font-size: 1.2rem;
+   
+    font-weight: 400;
+    
+}
+
+.funny-box-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.funny-box-container .box:nth-child(3) {
+
+    position: relative;
+
+}
+.box img{
+    margin-bottom: .7rem;
+}
+
+.icon-div {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    flex-direction: column;
+    border-radius: 50%;
+}
+
+.icon-para {
+    color: #F948B2;
+    display: inline-block;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+}
+
+.play-box:hover {
+
+
+    filter: brightness(80%);
+
+}
+/* funny section end */
 
 
 
@@ -195,14 +274,15 @@ main {
     /* nav end */
     /* goat section start */
     .goat-section {
-      
+
         padding: 2rem;
         flex-direction: column;
-        
+
     }
-    .goat-title{
+
+    .goat-title {
         padding: 2rem 2rem;
-        
+
     }
 
     .goat-title h2 {
@@ -212,15 +292,16 @@ main {
     .goat-title h1 {
         font-size: 5rem;
     }
-    .goat-image{
+
+    .goat-image {
         padding-right: 0px;
     }
-    
-/* button  */
+
+    /* button  */
     .btn-primary {
         padding: 1rem 2rem;
-        
-        
+
+
 
         font-size: 1rem;
     }
@@ -228,7 +309,8 @@ main {
 
 
 @media screen and (min-width:576px) and (max-width:992px) {
-/* nav start */
+
+    /* nav start */
     nav {
         flex-direction: column;
         gap: 3rem;
@@ -238,20 +320,24 @@ main {
     .nav-manu ul {
         flex-direction: column;
     }
+
     /* nav end */
     /* goat secton start */
     .goat-section {
-      
+
         padding: 5rem;
         flex-direction: column;
-        
+
     }
-    .goat-title{
+
+    .goat-title {
         padding: 2rem 2rem;
-        
+
     }
+
     .goat-image {
         padding-right: 0px;
     }
-/* goat sectin end */
+
+    /* goat sectin end */
 }
