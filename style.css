@@ -263,6 +263,7 @@ main {
     gap: 15rem;
     box-sizing: border-box;
     margin-top: 6rem;
+    margin-bottom: 10rem;
 }
 
 
@@ -308,10 +309,38 @@ main {
 }
 
 /* play section end */
+/* classification section start */
 
 
 
+.classification-section {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto ;
+    grid-gap: 2rem 2rem;
+    align-items: center;
+    justify-items: center;
+    
 
+
+
+}
+
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+   
+}
+.card:hover{
+    border: 1px solid fuchsia;
+    border-radius: 20px;
+    padding: 10px;
+    color: #F948B2;
+}
+
+
+ 
 
 
 
@@ -463,3 +492,4 @@ main {
 
 
     }
+}
