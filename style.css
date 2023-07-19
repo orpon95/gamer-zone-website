@@ -315,11 +315,12 @@ main {
 
 .classification-section {
     display: grid;
-    grid-template-columns: auto auto auto auto auto ;
+    grid-template-columns: auto auto auto auto auto;
     grid-gap: 2rem 2rem;
     align-items: center;
     justify-items: center;
-    
+
+
 
 
 
@@ -330,17 +331,60 @@ main {
     display: flex;
     align-items: center;
     gap: 1rem;
-   
+
 }
-.card:hover{
+
+.card img {
+    width: auto;
+}
+
+.card:hover {
     border: 1px solid fuchsia;
     border-radius: 20px;
     padding: 10px;
     color: #F948B2;
 }
 
+/* fooer start */
+footer {
+    background: #0B0223;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    margin-top: 4rem;
+}
 
- 
+.condition {
+    margin-bottom: 2rem;
+}
+
+.li-div,
+.condition {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+
+}
+
+.li-div li,
+.condition li {
+    list-style: none;
+    margin-top: 1.5rem;
+
+}
+
+.icon-div2 {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2.5rem;
+}
+
+.icon-div2 i {
+    font-size: 2rem;
+}
+
+
 
 
 
@@ -427,6 +471,20 @@ main {
     .play-title p {
         text-align: center;
     }
+
+    /* play section start */
+
+    /* classification-section start */
+    .classification-section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem 0rem;
+
+    }
+
+    .li-div,
+    .condition,.icon-div2 {
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -492,4 +550,16 @@ main {
 
 
     }
+
+    .classification-section {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3rem 0rem;
+    }
+
+    .li-div,
+    .condition,.icon-div2 {
+        flex-wrap: wrap;
+    }
+
+
 }
