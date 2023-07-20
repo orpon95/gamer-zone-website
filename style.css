@@ -313,7 +313,7 @@ main {
 
 
 
-.classification-section {
+/* .classification-section {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     grid-gap: 2rem 2rem;
@@ -322,15 +322,20 @@ main {
 
 
 
-
-
+} */
+.classification-section{
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
 .card {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: .8rem;
+    flex-basis: 20%;
 
 }
 
@@ -341,7 +346,7 @@ main {
 .card:hover {
     border: 1px solid fuchsia;
     border-radius: 20px;
-    padding: 10px;
+    padding: 5px;
     color: #F948B2;
 }
 
